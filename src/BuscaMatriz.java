@@ -19,7 +19,7 @@ public class BuscaMatriz {
         return operacoes;
     }
 
-    public static int EsquinaSuperiorDireita(int[][]matriz){
+    public static int EsquinaSuperiorDireita(int[][] matriz){
         int operacoes = 0;
         int linha = 0;
         int coluna = matriz[0].length - 1;
@@ -33,7 +33,7 @@ public class BuscaMatriz {
             if(coluna > 0 && matriz[linha][coluna - 1] < matriz[linha + 1][coluna]){
                 coluna--;
             } else{
-                coluna++;
+                linha++;
             }
 
             operacoes++;

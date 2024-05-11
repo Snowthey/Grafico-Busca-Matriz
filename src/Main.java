@@ -28,9 +28,11 @@ public class Main {
             }
 
             int quantidade = objBuscaMatriz.BuscaLinear(matriz);
+            // para mudar entre o grafico de BuscaLinear e EsquinaSuperiorDireita é so mudar o objBuscaMatriz
+           //int quantidade = objBuscaMatriz.EsquinaSuperiorDireita(matriz);
 
             series.add(tamanho, quantidade);
-            System.out.println("Quantidade de buscas:" + quantidade);
+            System.out.println("Quantidade de buscas: " + quantidade);
         }
 
         objGrafico = new Grafico(series);
